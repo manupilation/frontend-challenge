@@ -1,4 +1,4 @@
-/* eslint-disable react/function-component-definition */
+import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Head from '../infra/Head';
 import Header from '../components/Header'
@@ -7,18 +7,21 @@ import SearchForm from '../components/SearchForm';
 import GlobalStyle from '../styles/GlobalStyles';
 
 
-const Home: NextPage = () => (
-  <div>
-    <GlobalStyle />
-    <Head title="Wine" />
+const Home: NextPage = () => {
+  const [sortOption, setSortOption] = useState('');
 
-    <Header />
+  return (
     <div>
-      <SearchForm />  
-      <WinesList />
+      <GlobalStyle />
+      <Head title="Wine" />
+  
+      <Header />
+      <div>
+        <SearchForm sortOp={setSortOption}/>
+        <WinesList sortSl={sortOption}/>
+      </div>
     </div>
-
-  </div>
-);
+  );
+} ;
 
 export default Home;
