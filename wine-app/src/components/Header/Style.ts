@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
-  height: 60px;
+  height: 13vh;
   display: flex;
   text-align: center;
   flex-direction: row;
@@ -22,7 +22,7 @@ const HeaderWrapper = styled.header`
     height: 70%;
 
     & li {
-      margin-right: 15px;
+      margin-right: 50px;
       height: 100%;
       list-style-type: none;
       height: auto;
@@ -30,7 +30,7 @@ const HeaderWrapper = styled.header`
         color: #555;
         text-decoration: none;
         height: 100%;
-        font-size: 14px;
+        font-size: 18px;
       } & a:hover {
         color: #D14B8F;
       }
@@ -47,8 +47,10 @@ const HeaderWrapper = styled.header`
     width: 50%;
     margin-left: 40px;
       & img {
-        width: 60px;
-        height: 21px;
+        width: 90px;
+        height: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
       }
   }
 
@@ -57,8 +59,8 @@ const HeaderWrapper = styled.header`
     justify-content: space-evenly;
     width: 20%;
       & img {
-      width: 45px;
-      height: 45px;
+      width: 25%;
+      height: 25%;
     }
   }
 `
