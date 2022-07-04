@@ -1,22 +1,29 @@
 import React from 'react';
+import HeaderWrapper from './Style';
+
+
 
 function WineHeader() {
   return(
-    <header>
-      <img src="wine.svg" alt="Wine logo" />
-      <nav>
-        <ul>
-          <li>Clube</li>
-          <li>Loja</li>
-          <li>Produtores</li>
-          <li>Ofertas</li>
-          <li>Eventos</li>
-        </ul>
-      </nav>
-      <img src="winebag.svg" alt="Ícone de usuário" />
-      <img src="user.svg" alt="Ícone de usuário" />
-      <img src="search.svg" alt="Ícone de usuário" />
-    </header>
+    <HeaderWrapper>
+      <span>
+        <a href="/"><img src="wine.svg" alt="Wine logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="https://www.wine.com.br/clubewine/">Clube</a></li>
+            <li><a href="https://www.wine.com.br/loja-vinhos">Loja</a></li>
+            <li><a href="https://www.wine.com.br/loja/produtor/">Produtores</a></li>
+            <li><a href="https://www.wine.com.br/vinhos-promocao">Ofertas</a></li>
+            <li><a href="https://we.wine.com.br/">Eventos</a></li>
+          </ul>
+        </nav>
+      </span>
+      <div>
+        <img src="search.svg" alt="Ícone de usuário" />
+        <img src="user.svg" alt="Ícone de usuário" />
+        <img src="winebag.svg" alt="Ícone de usuário" />
+      </div>
+    </HeaderWrapper>
   );
 }
 
