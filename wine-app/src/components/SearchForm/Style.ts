@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 const SectionWrapper = styled.section`
-  border: solid 1px red;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 30%;
+  align-items: end;
+  max-width: 27%;
   height: 100vh;
   margin: 40 auto;
   margin-top: 20px;
@@ -13,39 +12,40 @@ const SectionWrapper = styled.section`
   form {
     display: flex;
     flex-direction: column;
-    clear: none;
     flex-wrap: wrap;
-    border: solid 1px red;
     width: 100%;
-    * {
-      margin: 10px auto 8px 0;
-    }
 
     input {
-      margin-left: 50px;
+      margin-left: 100px;
+      margin-right: 10px;
+    }
+
+    div {
+      margin-bottom: 20px;
     }
   }
 
+  label {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 17px;
+    color: #1D1D1B;
+  }
+
   h2 {
-    font-size: 16px;
+    width: 256px;
+    height: 22px;
     font-family: 'Neo Sans Std';
-    text-align: left;
+    font-size: 16px;
+    text-align: center;
   }
 
   h4 {
     font-family: 'Lato';
-    font-size: 14px;
-    margin-left: 16px;
+    text-align: center;
+    font-size: 18px;
     color: #333;
   }
-
-  label {
-    border: solid 1px green;
-  }
-
-  // * {
-  //   border: solid 1px red;
-  // }
 `
 
 export default SectionWrapper;
