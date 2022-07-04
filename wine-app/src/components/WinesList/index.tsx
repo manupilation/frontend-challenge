@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Requests } from '../../utils/Request';
 import { Wine } from '../../types/wine';
 import WineCard from '../WineCard';
+import DivWrapper from './Style';
 
 export default function WinesList(props: { sortSl: string }) {
   const [listWines, setListWines] = useState<Wine[]>([]);
@@ -21,8 +22,8 @@ export default function WinesList(props: { sortSl: string }) {
 
 
   return(
-    <div>
+    <DivWrapper>
       { listWines && listWines.map((product) => <WineCard {...product} />) }
-    </div>
+    </DivWrapper>
   );
 }

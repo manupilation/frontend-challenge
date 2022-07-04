@@ -1,8 +1,6 @@
 import React from 'react';
 import HeaderWrapper from './Style';
 
-
-
 function WineHeader() {
   return(
     <HeaderWrapper>

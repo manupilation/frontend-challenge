@@ -7,6 +7,12 @@ const GlobalStyle = createGlobalStyle`
     background: #F5F5F5;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
+  .wines-container {
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
  
 export default GlobalStyle;
