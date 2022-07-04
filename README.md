@@ -22,7 +22,7 @@
 #### Utilize seu gerenciador de pacotes favorito!
 
 ```
-  cd frontend-challange/wine-app
+  cd frontend-challenge/wine-app
   npm install | yarn
 ```
 
