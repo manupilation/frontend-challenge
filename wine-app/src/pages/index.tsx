@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Head title="Wine" />
   
       <Header />
-      <div>
+      <div className='wines-container'>
         <SearchForm sortOp={setSortOption}/>
         <WinesList sortSl={sortOption}/>
       </div>
